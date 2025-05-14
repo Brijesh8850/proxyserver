@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 
 // Proxy requests to the insecure backend
 app.use('/api', createProxyMiddleware({
-  target: 'http://103.76.214.46/AutoMate/SmartBranch/API',
+  target: 'http://103.76.214.46/AutoMateQR/SmartBranch/API',
   changeOrigin: true,
   pathRewrite: {
     '^/api': '', // remove /api prefix
